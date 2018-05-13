@@ -1,17 +1,15 @@
-function divisible (dividend, divisor) {
-  return dividend % divisor === 0
-}
+const isDivisible = (dividend, divisor) => dividend % divisor === 0
 
-const sumOfMultiples = () => {
+const sumOfMultiples = (range = 1000) => {
   let total = 0
 
-  for (let i = 1; i < 1000; i++) {
-    if (divisible(i, 3) || divisible(i, 5)) {
+  for (let i = 1; i < range; i++) {
+    if (isDivisible(i, 3) || isDivisible(i, 5)) {
       total += i
     }
   }
 
-  console.log(total)
+  return total
 }
 
-sumOfMultiples()
+module.exports = sumOfMultiples
