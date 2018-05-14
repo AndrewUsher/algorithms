@@ -1,17 +1,28 @@
 // Print all numbers in given range. For multiples of 3, print fizz. For multiples of 5, print buzz. For multiples of 3 and 5, print fizzbuzz.
 
-function fizzBuzz (start, end) {
+const fizzBuzz = (start = 1, end = 100) => {
+  if (
+    typeof start === 'string' ||
+    typeof end === 'string' ||
+    typeof start === 'object' ||
+    typeof end === 'object'
+  ) {
+    return false
+  }
+  let results = []
   for (let i = start; i <= end; i++) {
     if (i % 3 === 0 && i % 5 === 0) {
-      console.log('fizzbuzz')
+      results.push('fizzbuzz')
     } else if (i % 3 === 0) {
-      console.log('fizz')
+      results.push('fizz')
     } else if (i % 5 === 0) {
-      console.log('buzz')
+      results.push('buzz')
     } else {
-      console.log(i)
+      results.push(i)
     }
   }
+
+  return results
 }
 
-fizzBuzz(1, 100)
+module.exports = fizzBuzz
