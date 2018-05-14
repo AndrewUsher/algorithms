@@ -1,4 +1,5 @@
 const palindrome = string => {
+  if (typeof string === 'number' || typeof string === 'object') return false
   let original = string.replace(/\s/g, '').toLowerCase()
   let reversed = string
     .replace(/\s/g, '')
@@ -9,4 +10,4 @@ const palindrome = string => {
   return reversed === original
 }
 
-console.log(palindrome('Was it a car or a cat I saw'))
+module.exports = palindrome
