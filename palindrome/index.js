@@ -1,3 +1,4 @@
+// Tests if string is a palindrome: same reversed
 const palindrome = string => {
   if (typeof string === 'number' || typeof string === 'object') return false
   let original = string.replace(/\s/g, '').toLowerCase()
