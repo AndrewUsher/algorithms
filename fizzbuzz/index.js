@@ -1,4 +1,6 @@
-// Print all numbers in given range. For multiples of 3, print fizz. For multiples of 5, print buzz. For multiples of 3 and 5, print fizzbuzz.
+// Print all numbers in given range. For multiples of 3, print fizz.
+// For multiples of 5, print buzz.
+// For multiples of 3 and 5, print fizzbuzz.
 
 const fizzBuzz = (start = 1, end = 100) => {
   if (
