@@ -1,7 +1,5 @@
-const sortedUnion = arr => {
-  const argumentsArr = [].concat(...arguments)
-  const set = [...new Set(argumentsArr)]
-  return set
+const sortedUnion = (...args) => {
+  return [...new Set(args)]
 }
 
 module.exports = sortedUnion

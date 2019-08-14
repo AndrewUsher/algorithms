@@ -11,7 +11,7 @@ const fizzBuzz = (start = 1, end = 100) => {
   ) {
     return false
   }
-  let results = []
+  const results = []
   for (let i = start; i <= end; i++) {
     if (i % 3 === 0 && i % 5 === 0) {
       results.push('fizzbuzz')

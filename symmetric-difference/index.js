@@ -1,6 +1,6 @@
-const symmetricDifference = (args) => {
+const symmetricDifference = (...args) => {
   const diff = (A, B) => new Set([...A].filter(num => !B.has(num)))
-  const result = [...arguments]
+  const result = args
     .map(arr => new Set(arr))
     .reduce((current, set) => new Set([...diff(current, set), ...diff(set, current)]))
 

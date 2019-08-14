@@ -1,9 +1,9 @@
 const sumAllNumsInRange = arr => {
   const newArr = arr.sort((x, y) => x - y)
-  let last = newArr[1]
-  let first = newArr[0]
+  const last = newArr[1]
+  const first = newArr[0]
 
-  let total = (last - first + 1) * (first + last) / 2
+  const total = (last - first + 1) * (first + last) / 2
   return total
 }
 

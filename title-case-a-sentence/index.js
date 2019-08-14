@@ -1,9 +1,9 @@
 const titleCase = str => {
-  let arr = str
+  const arr = str
     .toLowerCase()
     .split(' ')
 
-  let newArr = arr
+  const newArr = arr
     .map(word => word
       .charAt(0)
       .toUpperCase() + word.slice(1))

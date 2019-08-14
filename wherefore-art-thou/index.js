@@ -1,10 +1,7 @@
 const whatIsInAName = (collection, source) => {
-  let keys = Object.keys(source)
+  const keys = Object.keys(source)
 
-  return collection
-    .filter(object => keys
-      .every(key => object
-        .hasOwnProperty(key) && object[key] === source[key]))
+  return collection.filter(object => keys.every(key => object.prototype.hasOwnProperty.call(object, key) && object[key] === source[key]))
 }
 
 module.exports = whatIsInAName

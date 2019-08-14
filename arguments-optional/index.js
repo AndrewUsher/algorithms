@@ -1,10 +1,7 @@
 /* eslint-disable no-return-assign */
 // Create a function that sums two arguments together.
 // If one arg is provided, then return a function that expects one arg and returns the sum.
-const argumentsOptional = () => {
-  const args = Array
-    .from(arguments)
-
+const argumentsOptional = (...args) => {
   return args
     .some(i => typeof i !== 'number')
     ? undefined

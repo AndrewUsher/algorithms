@@ -1,5 +1,4 @@
-const seekAndDestroy = arr => {
-  const args = Array.from(arguments).slice(1)
+const seekAndDestroy = (arr, ...args) => {
   return arr.filter(value => !args.includes(value))
 }
 

@@ -1,5 +1,5 @@
 const chunkyMonkey = (arr, size) => {
-  let chunkArr = []
+  const chunkArr = []
   let i = 0
 
   while (arr.length > i) {
