@@ -4,7 +4,7 @@ const missingLetters = str => {
 
   str
     .split('')
-    .map((char, i) => {
+    .forEach((char, i) => {
       str.charCodeAt(i) === comparison ? comparison++ : missingLetter = String.fromCharCode(comparison)
     })
 
